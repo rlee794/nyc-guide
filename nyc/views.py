@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import View
-
 from nyc.boroughs import boroughs
+
 
 class CityView(View):
     def get(self, request):
@@ -28,8 +28,9 @@ class VenueView(View):
         return render(
             request=request,
             template_name='venue.html',
-            context={'borough': borough, 'activities': boroughs[borough].keys(), 'activity': activity, 'venues': venue, 'venue': boroughs[borough][activity][venue]['description'] },
+            context={'borough': borough, 'activities': boroughs[borough].keys(), 'activity': activity, 'venues': venue, 'venue': boroughs[borough][activity][venue]['description']},
         )
 
- # return render(request=request, template_name='venue.html', context={
-        #  'borough':borough, 'activity': activity, 'venue': venue, 'venues': boroughs[borough][activity][venue]['description']})
+
+
+ 

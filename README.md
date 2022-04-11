@@ -24,7 +24,7 @@ At the end, you will find a brief description of the activity of your choice, an
 &nbsp;&nbsp;<ins>For Mac</ins> - `source venv/bin/activate`
 6. Return to the main folder `nyc-guide` (if necessary) by `cd ..`
 7. Run `pip install django` (to install Django)
-8. Start the virtual server – `python manage.py startserver` (or `python3 manage.py startserver`)
+8. Start the virtual server – `python manage.py runserver` (or `python3 manage.py runserver`)
 9. In the browser of your choice, type for the url , `localhost:8000', and you shold be good to start your tour of NYC!
 
 ### **Have Fun!**
